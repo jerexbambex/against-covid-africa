@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'ACA') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,13 +19,22 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/mine.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
+    <style>
+        .rotate-45 {
+          transform: rotate(45deg);
+        }
+        .-rotate-45 {
+          transform: rotate(-45deg);
+        }
+    </style>
 </head>
 <body class="bg-gray-300">
     <div id="app">
         <main class="py-4 pt-0">
             @yield('content')
         </main>
+        <footer-component></footer-component>
     </div>
     {{-- <script src="js/app.js"></script> --}}
 </body>

@@ -1,61 +1,33 @@
 <template>
-	<div>
-	  	<div class="pt-6 px-4 sm:px-6 lg:px-8">
-        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start">
-          <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-            <div class="flex items-center justify-between w-full md:w-auto">
-              <a href="#">
-                <img class="h-8 w-auto sm:h-10" src="/img/logos/workflow-mark-on-white.svg" alt="" />
-              </a>
-              <div class="-mr-2 flex items-center md:hidden">
-                <button @click="open = true" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
-                  <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
+    <nav class="bg-white">
+        <div class="md:flex items-center justify-between py-2 px-8 md:px-12 -mx-4">
+            <div class="flex justify-between items-center">
+               <div class="text-2xl font-bold text-gray-800 md:text-3xl">
+                    <a href="#">ACA</a>
+               </div>
+                <div class="md:hidden">
+                    <button @click="isOpen = !isOpen" type="button" class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path class="hidden" d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"/>
+                            <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="hidden md:block md:ml-10 md:pr-4">
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Product</a>
-            <a href="#" class="ml-8 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Features</a>
-            <a href="#" class="ml-8 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Marketplace</a>
-            <a href="#" class="ml-8 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Company</a>
-            <a href="#" class="ml-8 font-medium text-indigo-600 hover:text-indigo-900 focus:outline-none focus:text-indigo-700 transition duration-150 ease-in-out">Log in</a>
-          </div>
-        </nav>
-      </div>
-
-      <div  @click="isOpen = !isOpen" x-show="open" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-        <div class="rounded-lg shadow-md">
-          <div class="rounded-lg bg-white shadow-xs overflow-hidden">
-            <div class="px-5 pt-4 flex items-center justify-between">
-              <div>
-                <img class="h-8 w-auto" src="/img/logos/workflow-mark-on-white.svg" alt="" />
-              </div>
-              <div class="-mr-2">
-                <button @click="open = false" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
-                  <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
+            <div class="font-montserrat flex flex-col md:flex-row hidden md:block -mx-2">
+                <a href="#" class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Home</a>
+                <a href="#" class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">About</a>
+                <a href="#" class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Contact</a>
             </div>
-            <div class="px-2 pt-2 pb-3">
-              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Product</a>
-              <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Features</a>
-              <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Marketplace</a>
-              <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Company</a>
-            </div>
-            <!-- <div>
-              <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out">
-                Log in
-              </a>
-            </div> -->
-          </div>
+            <transition appear enter-active-class="animated slideInDown delay" leave-active-class="animated slideOutUp">
+	            <div v-if="isOpen" class="bg-white font-montserrat flex flex-col md:flex-row md:hidden -mx-2 pb-4 px-2 pt-6 shadow-md">
+	                <a href="#" class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Home</a>
+	                <a href="#" class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">About</a>
+	                <a href="#" class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Contact</a>
+	            </div>
+	        </transition>
         </div>
-      </div>
-	</div>
+    </nav>
 </template>
 
 <script>
@@ -65,17 +37,7 @@
 		data() {
 			return {
 				isOpen: false,
-				open() {
-			        if (this.isOpen) {
-			          return
-			        }
-			        this.search = ''
-			        this.isOpen = true
-			        setTimeout(() => {
-			          this.$refs.search.focus()
-			        }, 100)
-		      	},
-			}
+	      	}
 		},
 
       	methods: {
@@ -83,3 +45,41 @@
       	}
 	}
 </script>
+
+<style>
+	.delay{
+		animation-delay: s;
+	}
+	.v-enter-active {
+		transform: bounce .5s;
+	}
+	.v-leave-active {
+		transform: bounce 5s reverse;
+	}
+	.bounce-enter-active, .bounce-leave-active {
+		/*transition: transform .2s ease-in-out;*/
+		/*transform: scaleY(0);*/
+		transition: top .3s ease cubic-bezier(0.17, 0.04, 0.03, 0.94);
+	}
+	.bounce-enter, .bounce-leave-to {
+		/*transition: all 3s ease-in-out cubic-bezier(0.17, 0.04, 0.03, 0.94);*/
+		transition: all .2s ease;
+		/*transform: scaleY(0);*/
+	}
+	@keyframes bounce {
+		0% {
+			transform: scale(0);
+			opacity: (0);
+		}
+		50% {
+			transform: scale(0.5);
+			opacity: (1);
+		}
+		100% {
+			transform: scale(1);
+			opacity: (1)
+		}
+	}
+
+
+</style>

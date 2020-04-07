@@ -23,6 +23,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 // Navbar Component
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
+Vue.component('footer-component', require('./components/FooterComponent.vue').default);
 
 // import NavBar from './components/Navbar.vue';
 
