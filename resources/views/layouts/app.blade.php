@@ -27,6 +27,9 @@
         .-rotate-45 {
           transform: rotate(-45deg);
         }
+        .delay {
+            animation-delay: .2s;
+        }
     </style>
 </head>
 <body class="bg-gray-300">

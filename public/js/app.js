@@ -24693,7 +24693,7 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "container mx-auto px-6 pt-10 pb-6" }, [
           _c("div", { staticClass: "flex flex-wrap" }, [
-            _c("div", { staticClass: "w-full md:w-1/4" }, [
+            _c("div", { staticClass: "w-full md:w-1/3" }, [
               _c(
                 "h5",
                 { staticClass: "uppercase mb-3 font-bold text-indigo-100" },
@@ -24706,7 +24706,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-sm",
+                        "hover:underline text-indigo-300 hover:text-white text-xs",
                       attrs: { href: "#" }
                     },
                     [_vm._v("FAQ")]
@@ -24718,7 +24718,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-sm",
+                        "hover:underline text-indigo-300 hover:text-white text-xs",
                       attrs: { href: "#" }
                     },
                     [_vm._v("Help")]
@@ -24730,7 +24730,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-sm",
+                        "hover:underline text-indigo-300 hover:text-white text-xs",
                       attrs: { href: "#" }
                     },
                     [_vm._v("Support")]
@@ -24739,12 +24739,10 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "w-full md:w-1/4 md:text-left" }, [
-              _c(
-                "h5",
-                { staticClass: "uppercase mb-3 font-bold text-indigo-100" },
-                [_vm._v("Legal")]
-              ),
+            _c("div", { staticClass: "w-full md:w-1/3 md:text-left" }, [
+              _c("h5", {
+                staticClass: "uppercase mb-3 font-bold text-indigo-100"
+              }),
               _vm._v(" "),
               _c("ul", { staticClass: "mb-4" }, [
                 _c("li", { staticClass: "mt-1" }, [
@@ -24755,7 +24753,7 @@ var staticRenderFns = [
                         "hover:underline text-indigo-300 hover:text-white text-xs",
                       attrs: { href: "#" }
                     },
-                    [_vm._v("Terms")]
+                    [_vm._v("©2020")]
                   )
                 ]),
                 _vm._v(" "),
@@ -24765,101 +24763,9 @@ var staticRenderFns = [
                     {
                       staticClass:
                         "hover:underline text-indigo-300 hover:text-white text-xs",
-                      attrs: { href: "#" }
+                      attrs: { href: "/" }
                     },
-                    [_vm._v("Privacy")]
-                  )
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "w-full md:w-1/4 md:text-left" }, [
-              _c(
-                "h5",
-                { staticClass: "uppercase mb-3 font-bold text-indigo-100" },
-                [_vm._v("Social")]
-              ),
-              _vm._v(" "),
-              _c("ul", { staticClass: "mb-4" }, [
-                _c("li", { staticClass: "mt-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Facebook")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "mt-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Linkedin")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "mt-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Twitter")]
-                  )
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "w-full md:w-1/4 md:text-left" }, [
-              _c(
-                "h5",
-                { staticClass: "uppercase mb-3 font-bold text-indigo-100" },
-                [_vm._v("Company")]
-              ),
-              _vm._v(" "),
-              _c("ul", { staticClass: "mb-4" }, [
-                _c("li", { staticClass: "mt-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Official Blog")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "mt-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("About Us")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "mt-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Contact")]
+                    [_vm._v("AgainstCovid.Africa")]
                   )
                 ])
               ])
