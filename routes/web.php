@@ -23,5 +23,8 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::get('/support', 'TypeformController@index')->name('support');
+Route::get('/givesupport', 'TypeformController@giveSupport')->name('giveSupport');
+
 
 Route::resource('projects', 'ProjectController');
