@@ -24689,14 +24689,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "footer",
-      { staticClass: "bg-indigo-800 font-montserrat pb-0 -mt-10" },
+      { staticClass: "bg-teal-800 font-montserrat pb-0 -mt-10" },
       [
         _c("div", { staticClass: "container mx-auto px-6 pt-10 pb-6" }, [
           _c("div", { staticClass: "flex flex-wrap" }, [
             _c("div", { staticClass: "w-full md:w-1/3" }, [
               _c(
                 "h5",
-                { staticClass: "uppercase mb-3 font-bold text-indigo-100" },
+                { staticClass: "uppercase mb-3 font-bold text-teal-100" },
                 [_vm._v("Links")]
               ),
               _vm._v(" "),
@@ -24706,7 +24706,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
+                        "hover:underline text-teal-300 hover:text-white text-xs",
                       attrs: { href: "#" }
                     },
                     [_vm._v("FAQ")]
@@ -24718,7 +24718,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
+                        "hover:underline text-teal-300 hover:text-white text-xs",
                       attrs: { href: "#" }
                     },
                     [_vm._v("Help")]
@@ -24730,7 +24730,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
+                        "hover:underline text-teal-300 hover:text-white text-xs",
                       attrs: { href: "#" }
                     },
                     [_vm._v("Support")]
@@ -24741,7 +24741,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", { staticClass: "w-full md:w-1/3 md:text-left" }, [
               _c("h5", {
-                staticClass: "uppercase mb-3 font-bold text-indigo-100"
+                staticClass: "uppercase mb-3 font-bold text-teal-100"
               }),
               _vm._v(" "),
               _c("ul", { staticClass: "mb-4" }, [
@@ -24750,7 +24750,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
+                        "hover:underline text-teal-300 hover:text-white text-xs",
                       attrs: { href: "#" }
                     },
                     [_vm._v("©2020")]
@@ -24762,7 +24762,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass:
-                        "hover:underline text-indigo-300 hover:text-white text-xs",
+                        "hover:underline text-teal-300 hover:text-white text-xs",
                       attrs: { href: "/" }
                     },
                     [_vm._v("AgainstCovid.Africa")]
