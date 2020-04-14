@@ -36,6 +36,11 @@ Vue.component('footer-component', require('./components/FooterComponent.vue').de
 import VueRouter from 'vue-router';
 import routes from './routes';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 // import 'alpinejs';
 
 Vue.use(VueRouter);

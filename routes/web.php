@@ -26,5 +26,8 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/support', 'TypeformController@index')->name('support');
 Route::get('/givesupport', 'TypeformController@giveSupport')->name('giveSupport');
 
+Route::get('/showsupports', 'AirTableController@showSupports')->name('showSupports');
+Route::get('/showinnovations', 'AirTableController@showInnovations')->name('showInnovations');
+
 
 Route::resource('projects', 'ProjectController');

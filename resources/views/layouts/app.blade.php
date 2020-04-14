@@ -20,6 +20,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
     <style>
         .rotate-45 {
           transform: rotate(45deg);
@@ -39,6 +40,10 @@
         </main>
         <footer-component></footer-component>
     </div>
-    {{-- <script src="js/app.js"></script> --}}
+
+    <script src="{{ asset('js/aos.js') }}"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
