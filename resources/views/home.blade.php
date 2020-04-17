@@ -1,57 +1,58 @@
 @extends('layouts.app')
 
 @section('content')
+{{-- <nav-bar></nav-bar> --}}
 
-<div x-data="{ open: false }" class="relative bg-white overflow-hidden mt-0">
-  <div class="max-w-screen-xl mx-auto">
-    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+<div class="flex flex-wrap h-screen max-w-screen-xl mx-auto content-center text-center justify-center" style="background-repeat: no-repeat; background-size: cover; background-blend-mode: multiply; background-position: center center; background-image: url('img/pngs/Oreti.png');">
+  <h2 class="hidden md:block font-boing text-9xl tracking-tight leading-none text-black sm:text-6xl sm:leading-none md:text-9xl animated slideInDown flex-wrap content-center justify-center bg-teal-300 px-20 lg:py-10 md:py-5">
+    Against Covid Africa
+  </h2>
 
-      <nav-bar></nav-bar>
+  <h2 class="md:hidden sm:block font-boing tracking-tight leading-normal text-black text-7xl animated slideInDown flex flex-wrap sm:justify-center sm:justify-around mx-auto content-center py-12 justify-center justify-around">
+    Against Covid Africa
+  </h2>
 
-      <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-          {{-- <img class="sm:text-center md:text-center max-w-xs" src="img/svgs/covid.svg" alt="Fegocoosa"> --}}
-        <div class="sm:text-center lg:text-left delay">
-          {{-- <img class="absolute inset-0 w-full h-full object-cover object-center opacity-25" src="img/svgs/covid.svg" alt=""> --}}
-          {{-- <div class="sm:text-center lg:text-left">
-              <svg class="flex h-32 w-auto fill-current text-gray-600" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <g data-name="07-banned" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1"><circle cx="32" cy="32" r="31"/><path d="M6 32a26 26 0 0042.6 20.012L11.988 15.4A25.9 25.9 0 006 32zM58 32a26 26 0 00-42.6-20.012L52.012 48.6A25.891 25.891 0 0058 32zM27.1 23.682a3 3 0 014.218 4.218"/><ellipse cx="39" cy="27.5" rx="2" ry="2.5" transform="rotate(-23.799 39 27.5)"/><ellipse cx="24.5" cy="35" rx="2" ry="2.5" transform="rotate(-68.052 24.5 35)"/><path d="M43.2 40.365A13.929 13.929 0 0045.841 34H52v.5a1.5 1.5 0 003 0v-5a1.5 1.5 0 00-3 0v.5h-6.159a13.915 13.915 0 00-2.864-6.648l2.812-2.812.353.353a1.5 1.5 0 102.121-2.121l-3.535-3.535a1.5 1.5 0 00-2.121 2.121l.353.353-2.88 2.88A13.912 13.912 0 0034 18.159V12h.5a1.5 1.5 0 000-3h-5a1.5 1.5 0 000 3h.5v6.159a13.912 13.912 0 00-6.08 2.432M20.56 23.974A13.885 13.885 0 0018.159 30H12v-.5a1.5 1.5 0 00-3 0v5a1.5 1.5 0 003 0V34h6.159a13.912 13.912 0 002.432 6.08l-2.38 2.38-.353-.353a1.5 1.5 0 00-2.121 2.121l3.535 3.535a1.5 1.5 0 002.121-2.121l-.353-.353 2.312-2.312A13.915 13.915 0 0030 45.841V52h-.5a1.5 1.5 0 000 3h5a1.5 1.5 0 000-3H34v-6.159a13.911 13.911 0 006.372-2.647"/><ellipse cx="31.5" cy="41" rx="2" ry="1.5" transform="rotate(-41.911 31.5 41)"/></g>
-            </svg>
-          </div> --}}
-          <h2 class="font-boing text-7xl tracking-tight leading-none text-gray-900 sm:text-6xl sm:leading-none md:text-7xl animated slideInDown">
-           How are you helping to solve this
-            {{-- <br class="xl:hidden" /> --}}
-            <br class="xl:hidden" />
-            {{-- <div class=""></div> --}}
-            <span class="text-teal-600">crisis?</span>
-          </h2>
-          <p class="font-montserrat mt-3 md:text-base sm:text-sm text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 animated slideInLeft">
-            {{-- The coronavirus disease, COVID-19 is a global pandemic. Are you working on an initiative or interested in supporting any of these initiatives? --}}
-            In response to the covid-19 pandemic, many distruptive thinkers, business owners and entrepreneurial individuals have birthed beautiful initiatives in Africa. We have a resource bank of initiatives, solutions and partners helping to flatten the curve and reduce the effect of this pandemic and crisis on the wellbeing of people in any of the 54 African countries.
-          </p>
-          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div class="rounded-md shadow">
-              <a href="/support" class="font-montserrat w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-teal-600 hover:bg-teal-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10 shadow-lg hover:shadow-outline">
-                Sign up your Initiative
-              </a>
-            </div>
-            <div class="mt-3 sm:mt-0 sm:ml-3">
-              <a href="/showinnovations" class="font-montserrat w-full flex items-center justify-center px-8 py-3 border border-transparent md:text-md sm:text-sm leading-6 font-medium rounded-md text-teal-700 bg-teal-100 hover:text-teal-600 hover:bg-teal-50 focus:outline-none focus:shadow-outline focus:border-teal-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-                List of Initiatives
-              </a>
-            </div>
-          </div>
-      </div>
-      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="50,0 100,0 50,100 0,100" />
+  <div class="hover:animated bounce">
+    <a href="#cta">
+      <svg class="fill-current text-black h-24 w-24" viewBox="0 0 24 24">
+        <path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/>
       </svg>
-    </div>
+    </a>
   </div>
-  </div>
-  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <div class="absolute inset-0 w-full h-full bg-teal-900 opacity-50"></div>
-    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full translate-x-1/2" fill="currentColor" src="img/coro.jpg" alt="" />
+</div>
 
-  </div>
+<div class="w-full" id="cta">
+    <div class="flex bg-white my-auto mx-auto">
+        <div class="flex lg:text-left md:text-center px-4 md:px-12 lg:w-1/2 md:w-full">
+            <div class="py-10">
+                 <h2 class="font-boing text-4xl tracking-tight leading-none text-gray-900 sm:text-3xl sm:leading-none md:text-4xl animated slideInDown">
+                    How are you helping to solve this
+                    <br class="xl:hidden" />
+                    <span class="text-teal-600">crisis?</span>
+                </h2>
+                <p class="mt-4 mb-4 max-w-2xl md:text-md sm:text-sm leading-7 text-gray-700 font-montserrat animated slideInLeft">
+                    In response to the covid-19 pandemic, many distruptive thinkers, business owners and entrepreneurial individuals have birthed beautiful initiatives in Africa. We have a resource bank of initiatives, solutions and partners helping to flatten the curve and reduce the effect of this pandemic and crisis on the wellbeing of people in any of the 54 African countries.
+                </p>
+                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                    <div class="rounded-md shadow">
+                        <a href="/support" class="font-montserrat w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-teal-600 hover:bg-teal-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10 shadow-lg hover:shadow-outline">
+                          Sign up your Initiative
+                        </a>
+                    </div>
+                    <div class="mt-3 sm:mt-0 sm:ml-3">
+                        <a href="/showinnovations" class="font-montserrat w-full flex items-center justify-center px-8 py-3 border border-transparent md:text-md sm:text-sm leading-6 font-medium rounded-md text-teal-700 bg-teal-100 hover:text-teal-600 hover:bg-teal-50 focus:outline-none focus:shadow-outline focus:border-teal-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                            List of Initiatives
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block lg:w-1/2" style="clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%)">
+            <div class="h-full object-cover" style="background-image: url('img/coro.jpg'); background-size: cover; background-repeat: ; background-blend-mode: all;">
+              <div class="h-full bg-black opacity-30"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
