@@ -32,7 +32,7 @@
 		        <h5 class="uppercase mb-3 font-bold text-teal-100"></h5>
 		        <ul class="mb-4">
 		          <li class="mt-1">
-		            <a href="#" class="hover:underline text-teal-300 hover:text-white text-xs">&copy;2020</a>
+		            <!-- <a href="#" class="hover:underline text-teal-300 hover:text-white text-xs">&copy;2020</a> -->
 		          </li>
 		          <li class="mt-1">
 		            <a href="/" class="hover:underline text-teal-300 hover:text-white text-xs">AgainstCovid.Africa</a>
@@ -58,6 +58,7 @@
 	      	</div> -->
 	    </div>
 	  </div>
+
 	</footer>
 </template>
 

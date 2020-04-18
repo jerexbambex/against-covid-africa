@@ -3742,6 +3742,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({//
 });
 
@@ -24807,17 +24808,7 @@ var staticRenderFns = [
               }),
               _vm._v(" "),
               _c("ul", { staticClass: "mb-4" }, [
-                _c("li", { staticClass: "mt-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "hover:underline text-teal-300 hover:text-white text-xs",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("©2020")]
-                  )
-                ]),
+                _c("li", { staticClass: "mt-1" }),
                 _vm._v(" "),
                 _c("li", { staticClass: "mt-1" }, [
                   _c(

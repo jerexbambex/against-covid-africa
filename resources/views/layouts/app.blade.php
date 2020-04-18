@@ -39,6 +39,21 @@
             @yield('content')
         </main>
         <footer-component></footer-component>
+        <footer class="flex flex-wrap items-center justify-between p-2 px-12 bg-teal-900">
+            <div class="px-12 w-full lg:w-auto lg:mr-6 mb-2 lg:mb-0 text-center font-normal tracking-normal leading-6 antialiased text-base font-montserrat text-teal-300 text-sm">
+                © {{ date('Y') }} Powered by Fursee Inc.
+            </div>
+            {{-- <div class="flex flex-col lg:flex-row items-center w-full lg:w-auto">
+                <div class="mx-auto lg:mx-0 lg:ml-auto">
+                    <a class="inline-block mt-0 text-blue-900 hover:text-blue-700" href="#"></a>
+                    <a class="inline-block mt-0 ml-8 text-blue-900 hover:text-blue-700" href="#"></a>
+                    <a class="inline-block mt-0 ml-8 text-blue-900 hover:text-blue-700" href="#"></a>
+                </div>
+                <div class="flex justify-center mt-4 lg:mt-0 lg:ml-8"><img class="w-6 h-6 mr-6" src="placeholders/icons/message.svg" alt="">
+                    <img class="w-6 h-6" src="placeholders/icons/share.svg" alt="">
+                </div>
+            </div> --}}
+      </footer>
     </div>
 
     <script src="{{ asset('js/aos.js') }}"></script>
