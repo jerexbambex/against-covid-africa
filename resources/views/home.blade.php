@@ -274,7 +274,7 @@
 
 <section class="pt-8 px-4 text-center bg-white">
   <div class="max-w-2xl mx-auto mb-8">
-    <h2 class="font-boing font-normal text-3xl sm:text-lg leading-tight mb-6">Partners</h2>
+    <h2 class="font-boing font-normal text-base lg:text-3xl leading-tight mb-6">Partners</h2>
   </div>
   <div class="flex flex-wrap">
     <div data-aos="fade-up" data-aos-easing="" data-aos-duration="3000" class="w-1/2 md:w-1/4 px-8 mb-8 content-center justify-around"><img class="h-auto w-32" src="/img/logos/airtable.png" alt="" ></div>
