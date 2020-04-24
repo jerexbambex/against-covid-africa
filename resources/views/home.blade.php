@@ -76,7 +76,7 @@
         </p>
 
         <button class="font-montserrat shadow inline-flex items-center bg-teal-400 hover:bg-teal-600 focus:outline-none focus:shadow-outline text-white text-sm font-normal py-2 px-4 rounded-lg tracking-wide">
-          <a href="/showinnovations">Check list of solution providers</a>
+          <a href="#innovations">Check list of solution providers</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 text-gray-300" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <rect x="0" y="0" width="24" height="24" stroke="none"></rect>
               <circle cx="12" cy="12" r="9" />
@@ -125,7 +125,7 @@
           </a>
       </div>
       <div class="mt-3 sm:mt-0 sm:ml-3">
-          <a href="/" class="font-montserrat w-full flex items-center justify-center px-8 py-3 border border-transparent md:text-md sm:text-sm leading-6 font-medium rounded-md text-teal-700 bg-teal-100 hover:text-teal-600 hover:bg-teal-50 focus:outline-none focus:shadow-outline focus:border-teal-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+          <a href="#supports" class="font-montserrat w-full flex items-center justify-center px-8 py-3 border border-transparent md:text-md sm:text-sm leading-6 font-medium rounded-md text-teal-700 bg-teal-100 hover:text-teal-600 hover:bg-teal-50 focus:outline-none focus:shadow-outline focus:border-teal-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
               Check funding
           </a>
       </div>
@@ -287,6 +287,25 @@
   {{-- 4 --}}
 </section>
 
+<section id="innovations" class="pt-8 px-4 text-center bg-teal-200">
+  <div class="max-w-2xl mx-auto mb-8">
+    <h2 class="font-boing font-normal text-base lg:text-3xl leading-tight mb-6">List of Innovations</h2>
+  </div>
+
+  <div>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shrRxvk5fmRMumdAW?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  </div>
+</section>
+
+<section id="supports" class="pt-8 px-4 text-center bg-teal-300 mb-8">
+  <div class="max-w-2xl mx-auto mb-8">
+    <h2 class="font-boing font-normal text-base lg:text-3xl leading-tight mb-6">List of Supports</h2>
+  </div>
+
+  <div>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shrKR5Pngnl40pdfR?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  </div>
+</section>
 
 @endsection
 
